@@ -45,14 +45,18 @@ This document is written so that an AI (e.g. Claude Code) can run the review **o
 
 ### 1.3 Installed apps whose data should be used
 
-| App | Minimum version |
+| App | Installed version |
 |---|---|
+| aa-srp | 5.2.1 |
 | aa-structures | 4.0.1 |
-| aa-fleetpings | 4.0.0 |
-| allianceauth-afat | 6.1.0 |
-| allianceauth-corptools | 3.2.0 |
-| django-eveuniverse | as on the instance |
-| … | … |
+| allianceauth-afat | 6.2.0 |
+| allianceauth-corptools | 3.5.0 |
+| allianceauth-discordbot | 5.0.0 |
+| allianceauth-invoices | 0.1.9 |
+| fittings | 2.3.3 |
+| allianceauth | 5.4.0 |
+| django-eveonline-sde | 0.2.0 |
+| django-eveuniverse | 2.0.0 |
 
 ---
 
@@ -223,7 +227,7 @@ grep -rn "esi\|providers\|Token\|requests\.\|httpx\|urllib\|aiohttp" <app> --inc
 
 **7.2 Data source:** does the app use AA's `EveCharacter`, `EveCorporationInfo` and `EveAllianceInfo`?
 
-**7.3 Other apps:** could the app read from aa-structures, fleetpings, afat, corptools or eveuniverse (see 1.3) instead of collecting its own data? Is the dependency hard or optional (`if apps.is_installed(...)`)?
+**7.3 Other apps:** could the app read from one of the installed apps listed in 1.3 instead of collecting its own data? Is the dependency hard or optional (`if apps.is_installed(...)`)?
 
 ### 8. Interfaces (list completely)
 
