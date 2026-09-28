@@ -51,7 +51,6 @@ This document is written so that an AI (e.g. Claude Code) can run the review **o
 | aa-structures | 4.0.1 |
 | allianceauth-afat | 6.2.0 |
 | allianceauth-corptools | 3.5.0 |
-| allianceauth-discordbot | 5.0.0 |
 | allianceauth-invoices | 0.1.9 |
 | fittings | 2.3.3 |
 | allianceauth | 5.4.0 |
